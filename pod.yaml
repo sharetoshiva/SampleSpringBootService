@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: incatalystservices
+  labels:
+    app: microserviceapps
+spec:
+  containers:
+    - name: ic-springbootservice
+      image: b.gcr.io/ic-jenkins-container/ic-springbootservice
+      ports:
+        - containerPort: 9090
